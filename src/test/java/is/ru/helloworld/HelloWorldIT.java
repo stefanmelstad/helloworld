@@ -47,7 +47,7 @@ public class HelloWorldIT {
 
      @Test
      public void testTitle() throws Exception {
-      driver.get("http://localhost:4567/");
+      driver.get("http://localhost:4567");
       assertEquals("Hello world", driver.getTitle());
     }
 }
