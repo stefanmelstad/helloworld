@@ -32,7 +32,7 @@ This script installs Chrome and Firefox browsers, Xvfb and dependencies. It also
 Now you have everything setup, simply run:
 
     bin/package
-    bin/selenium_tests_xvfb
+    bin/selenium_test_xvfb
 
 #### For running locally
 
@@ -48,5 +48,11 @@ You'll also need to have the chromedriver (see above) installed. To install chro
     * [Download the zip file](http://chromedriver.storage.googleapis.com/index.html)
     * Unzip it to the root of the repo.
 
+When running locally we won't need Xvfb (in most cases), while developing, and we also like to be able to start and stop the server ourselves. So first:
 
+   bin/package
+   bin/run
 
+And in another terminal (command line) window run the tests:
+
+    bin/selenium_test
