@@ -16,7 +16,7 @@ Some helpful links:
 
 Greenqloud is a server, and has no display to run GUI programs like a browser. We would still like to run Selenium tests on servers, and [Xvfb](http://en.wikipedia.org/wiki/Xvfb) allows us to do just that.
 
-To setup the requirements on the Greenqlpud server, we've embedded a script in the repo. Just run:
+To setup the requirements on the Greenqloud server, we've embedded a script in the repo. Just run:
 
     bin/greenqloud_xvfb_setup
 
