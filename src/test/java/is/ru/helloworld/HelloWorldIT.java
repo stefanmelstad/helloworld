@@ -18,14 +18,13 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 @RunWith(BlockJUnit4ClassRunner.class)
 public class HelloWorldIT {
-    System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
     private static ChromeDriverService service;
     private WebDriver driver;
 
     @BeforeClass
     public static void createAndStartService() throws IOException {
      service = new ChromeDriverService.Builder()
-         //.usingDriverExecutable(new File("chromedriver"))
+         .usingDriverExecutable(new File("chromedriver"))
          .usingAnyFreePort()
          .build();
      service.start();
