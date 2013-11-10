@@ -12,8 +12,8 @@ Some helpful links:
 
 This repo currently has two separate Selenium test classes;
 
-1. HelloWorldIT - that sets up and runs using Google Chrome (via [chromedriver](http://code.google.com/p/selenium/wiki/ChromeDriver))
-2. FirefoxTestTitle - that runs a Selenium native WebDriver that controls Firefox
+1. ChromeTestTitleIT - that sets up and runs using Google Chrome (via [chromedriver](http://code.google.com/p/selenium/wiki/ChromeDriver))
+2. FirefoxTestTitleIT - that runs a Selenium native WebDriver that controls Firefox
 
 For each of these tests, you'll need to make sure you have the corresponding browser installed and accessible in your path. Depending on which OS you are running, this setup is different. 
 
