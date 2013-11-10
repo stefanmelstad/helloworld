@@ -12,6 +12,13 @@ Some helpful links:
 * [Read the docs!]([Download the zip file](http://chromedriver.storage.googleapis.com/index.html)
 * [Selenium IDE](http://www.seleniumhq.org/projects/ide/)
 
+### Selenium tests
+
+This repo currently has two separate Selenium test classes;
+
+1. ChromeTestTitleIT - that sets up and runs using Google Chrome (via [chromedriver](http://code.google.com/p/selenium/wiki/ChromeDriver))
+2. FirefoxTestTitleIT - that runs a Selenium native WebDriver that controls Firefox
+
 ### Run the tests on the Greenqloud server
 
 Greenqloud is a server, and has no display to run GUI programs like a browser. We would still like to run Selenium tests on servers, and [Xvfb](http://en.wikipedia.org/wiki/Xvfb) allows us to do just that.
@@ -27,12 +34,7 @@ Now you have everything setup, simply run:
     bin/package
     bin/selenium_tests_xvfb
 
-### Selenium tests
-
-This repo currently has two separate Selenium test classes;
-
-1. ChromeTestTitleIT - that sets up and runs using Google Chrome (via [chromedriver](http://code.google.com/p/selenium/wiki/ChromeDriver))
-2. FirefoxTestTitleIT - that runs a Selenium native WebDriver that controls Firefox
+#### For running locally
 
 For each of these tests, you'll need to make sure you have the corresponding browser installed and accessible in your path. Depending on which OS you are running, this setup is different. 
 
