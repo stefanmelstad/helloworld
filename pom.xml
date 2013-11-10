@@ -26,7 +26,8 @@
       <version>2.37.1</version>
     </dependency>
     <dependency>
-      <!-- Selenium server requirements - needed to run tests without connecting to another server -->
+      <!-- Selenium server requirements - needed to run tests 
+      without connecting to another server -->
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-server</artifactId>
       <version>2.37.1</version>
@@ -40,6 +41,9 @@
         <configuration>
           <archive>
             <manifest>
+              <!-- Explicity state the mainclass; Avoid having to run 
+              'java -jar xxx.java nameOfMainClass'  and just run
+              'java -jar xxx.java' -->
               <mainClass>is.ru.helloworld.HelloWorld</mainClass>
             </manifest>
           </archive>
@@ -78,6 +82,7 @@
         <executions>
           <execution>
             <goals>
+              <!-- Run during these phases; integration-test and verify -->
               <goal>integration-test</goal>
               <goal>verify</goal>
             </goals>
@@ -88,9 +93,11 @@
   </build>
 
   <properties>
+    <!-- Set encoding options - avoid platform issues -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <!-- Use JAVA 7 (OpenJDK or Oracle) -->
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 </project>
-
