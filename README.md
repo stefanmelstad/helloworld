@@ -50,8 +50,8 @@ You'll also need to have the chromedriver (see above) installed. To install chro
 
 When running locally we won't need Xvfb (in most cases), while developing, and we also like to be able to start and stop the server ourselves. So first:
 
-   bin/package
-   bin/run
+    bin/package
+    bin/run
 
 And in another terminal (command line) window run the tests:
 
