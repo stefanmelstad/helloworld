@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo bin/xvfb start
+export DISPLAY=:99
+
+mvn test-compile failsafe:integration-test
+
+sudo bin/xvfb stop
+
