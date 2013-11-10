@@ -17,7 +17,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 @RunWith(BlockJUnit4ClassRunner.class)
-public class HelloWorldIT {
+public class ChromeTestTitleIT {
     private static ChromeDriverService service;
     private WebDriver driver;
 
