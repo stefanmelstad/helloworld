@@ -1,12 +1,31 @@
-helloworld
-===
+# helloworld
 
-### Selenium
+## Greenqloud setup
+
+1. Clone this repo; `git clone https://github.com/arnihermann/helloworld`
+2. Run Greenqloud Xvfb setup script; `cd helloworld; bin/greenqloud_xvfb_setup`
+
+## Selenium
 
 Some helpful links:
 
 * [Read the docs!]([Download the zip file](http://chromedriver.storage.googleapis.com/index.html)
 * [Selenium IDE](http://www.seleniumhq.org/projects/ide/)
+
+### Run the tests on the Greenqloud server
+
+Greenqloud is a server, and has no display to run GUI programs like a browser. We would still like to run Selenium tests on servers, and [Xvfb](http://en.wikipedia.org/wiki/Xvfb) allows us to do just that.
+
+To setup the requirements on the Greenqlpud server, we've embedded a script in the repo. Just run:
+
+    bin/greenqloud_xvfb_setup
+
+This script installs Chrome and Firefox browsers, Xvfb and dependencies. It also fetches and prepares the chromedriver for us.
+
+Now you have everything setup, simply run:
+
+    bin/package
+    bin/selenium_tests_xvfb
 
 ### Selenium tests
 
