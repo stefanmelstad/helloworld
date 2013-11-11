@@ -9,7 +9,7 @@ sudo apt-get install -y xvfb firefox
 sudo apt-get install -y xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
 
 # Add chrome repo and install chrome
-wget https://dl.googlecom/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*; sudo apt-get -f install
 rm google-chrome-stable*
 
