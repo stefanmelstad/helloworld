@@ -2,6 +2,7 @@
 
 ## Greenqloud setup
 
+ hello
 1. Clone this repo; `git clone https://github.com/arnihermann/helloworld`
 2. Run Greenqloud Xvfb setup script; `cd helloworld; bin/greenqloud_xvfb_setup`
 
